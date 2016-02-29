@@ -1,0 +1,729 @@
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:normal;
+	font-weight:100;
+	src:local('Myriad Set Pro'), url("../fonts/Myriad-set-pro_thin.woff") format("woff");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+article, aside, footer, header, nav, main, section, summary, details, hgroup, figure, figcaption {
+    display: block;
+}
+body{
+   font-family:"Myriad Set Pro","微软雅黑";
+   margin:0;
+}
+ul,li,h1,h2,h3,h4,h5,h6,p,a{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-weight: normal;
+	text-decoration: none;
+}
+.navs{
+	position: absolute;
+	top:0;
+	left: 0;
+    text-align: justify;
+    background: rgba(0,0,0,0.8);
+	height:44px;
+	width: 100%;
+	line-height: 44px;
+	z-index: 2000;
+	box-sizing:border-box;
+	-webkit-transition:height .6s ease;
+	transition:height .6s ease;
+}
+.navs-padding{
+	max-width:980px;
+	padding: 0 22px;
+	margin: 0 auto;
+
+}
+.largeul{ 
+	min-width: 500px; 
+	max-width: 1068px;
+	height:44px;
+	line-height: 44px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.largeul li{
+	display: inline-block;
+}
+.largeul a{
+	color:#fff;
+	display: inline-block;
+	width: 100%;
+	height:100%;
+	position: relative;
+}
+.largeul span,.xiala span{
+	width:1px;
+	height:1px;
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.largeul:after{
+	content: " ";
+	display: inline-block;
+	width: 100%;
+	height: 0;
+}
+.logo{
+	width:1.25em;
+	height:44px;
+	background: url(../images/logo_large.svg) no-repeat;
+}
+.mac{
+	width:1.9375em;
+	height:44px;
+	background: url(../images/mac_large.svg) no-repeat;
+}
+.ipad{
+	width:1.875em;
+	height:44px;
+	background: url(../images/ipad_large.svg) no-repeat;
+}
+.iphone{
+	width:3em;
+	height:44px;
+	background: url(../images/iphone_large.svg) no-repeat;
+}
+.watch{
+	width:2.75em;
+	height:44px;
+	background: url(../images/watch_large.svg) no-repeat;
+}
+.tv{
+	width:1.25em;
+	height:44px;
+	background: url(../images/tv_large.svg) no-repeat;
+}
+.music{
+	width:2.5em;
+	height:44px;
+	background: url(../images/music_large.svg) no-repeat;
+}
+.support{
+	width:3.5625em;
+	height:44px;
+	background: url(../images/support_large.svg) no-repeat;
+}
+.search{
+	width:1.25em;
+	height:44px;
+	background: url(../images/search_large.svg) no-repeat;
+}
+.bag{
+	width:1.125em;
+	height:44px;
+	background: url(../images/bag_large.svg) no-repeat;
+
+}
+.smallul{
+	display: none;
+	position: relative;
+}
+
+.list{
+	width:48px;
+	height:48px;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.list-span1{
+	width:17px;
+	height:1px;
+	background: #fff;
+    position: absolute;
+    
+}
+.list-span2{
+	width:17px;
+	height:1px;
+	background: #fff;
+    position: absolute;
+   
+}
+.smallul .logo{
+	height: 48px;
+	width:;
+	position: absolute;
+	background: url(../images/logo_small.svg);
+	margin:0 -10px;
+	top:0;
+	left:50%;
+}
+.smallul .bag{
+	height:48px;
+    position: absolute;
+    top:0;
+    right:0;
+    background: url(../images/bag_small.svg);
+}
+article{
+   width:100%;
+   height:78%;
+   min-height: 650px;
+   background: #fff;
+   position: relative;
+   top:0px;
+   left: 0;
+   z-index: 1;
+   border-bottom: 4px solid #fff;
+}
+article section{
+	width: 100%;
+	height:100%;
+}
+.section-a{
+	display: block;
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 2;
+
+}
+.section-img{
+	height:458px;
+	margin:44px auto 0;
+	background: url(../images/home_hero_apple_tv_evergreen_medium.jpg) no-repeat center center;
+	background-size: 865px 458px;
+
+}
+.section-wordsbox{
+	height:100px;
+}
+.section-wordsbox:before{
+	content: ' ';
+    display: inline-block;
+    width: 0px;
+    font-size: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+.section-words{
+	width:100%;
+	height:auto;
+	position: relative;
+	top:-90px;
+	vertical-align: middle;
+    
+}
+.section-words h1{
+	text-align: center;
+	width:136px;
+	height:50px;
+	margin:0 auto 0.25em;
+	background: url(../images/logo_appletv_medium.png) no-repeat;
+    text-indent: -2000px;
+    margin-bottom: 20px;
+}
+.section-words h2{
+    text-align: center;
+    font-size: 42px;
+    color:#333;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.links{
+    text-align: center;
+    font-size:20px;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 200;
+}
+.links li{
+    display: inline-block;
+    margin-left: 0.3em;
+    margin-right: 0.35em;
+    margin-bottom: .5em;
+}
+.links a{
+	color:#08c;
+	white-space: nowrap;
+    text-decoration: none;
+    pointer-events: all;
+    display: inline-block;
+}
+.links span:after{
+    content: " ";
+    color: inherit;
+    font-family: 'Apple Icons';
+    font-style: normal;
+    font-weight: inherit;
+    font-size: 1em;
+    line-height: 1;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding-left: .3em;
+}
+.section-nav{
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    right: 0;
+    background: transparent;
+    height: 40px;
+    display: block;
+    text-align: center;
+    z-index: 3;
+}
+.section-nav ul{
+	display: inline-block;
+}
+.section-nav li{
+	float: left;
+	width:8px;
+	height:8px;
+	margin:0 10px;
+	position: relative;
+}
+.section-nav-a{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    outline: none;
+    border-radius: 50%;
+    background-color: #999;
+    font: 0/0 a;
+    color: transparent;
+}
+.asides{
+	max-width: 2560px;
+    margin: 0 auto;
+}
+.asides ul{
+    margin: 0;
+    position: relative;
+}
+.asides ul:before{
+	content: " ";
+	display:table;
+}
+.asides li{
+	float: left;
+	width:25%;
+	min-height:2px;
+    height:auto;
+    z-index: 1;
+    border-bottom:2px solid #fff;
+}
+.asides-a{
+	display: block;
+	height:200px;
+	width: auto;
+	border-right:1px solid #fff;
+	border-left:1px solid #fff;
+    background-size: 640px 200px;
+    font:0/0 a;
+}
+.asides-a-one{
+	border-left: none;
+	background: url(../images/promo_holiday_watch_large.jpg) center center;
+}
+.asides-a-two{
+	background: url(../images/promo_ios93preview_large.jpg) center center;
+}
+.asides-a-three{
+	background: url(../images/promo_macbook_large.jpg)center center;
+}
+.asides-a-four{
+	border-right: none;
+	background: url(../images/promo_startsomethingnew_iphone6s_large.jpg)center center;
+}
+
+.asides ul:after{
+		content: " ";
+		clear: both;
+		display: block;
+	}
+.footers{
+		background: #f2f2f2;
+		font-size: 12px;
+	    line-height: 1.66667;
+	    font-weight: 400;
+	    letter-spacing: normal;
+	    color: #666;
+	    /* min-width: 1024px; */
+	    overflow: hidden;
+	    position: relative;
+	    z-index: 1;
+	}
+	.footer-con{
+		margin:0 auto;
+		padding: 0 22px;
+		max-width: 980px;
+	}
+	.footer-nav{
+		font-size: 12px;
+	    line-height: 1.66667;
+	    font-weight: 400;
+	    letter-spacing: normal;
+	    position: relative;
+	    z-index: 1;
+	    padding-top: 20px;
+	}
+	.footer-words{
+		width:20%;
+		float:left;
+		min-height: 2px;
+	}
+	.footer-nav:after{
+		clear: both;
+		content: " ";
+		display: block;
+	}
+	.footer-words-tit h3{
+		font-weight: 600;
+		color:#333;
+	}
+
+	.footer-words-a{
+		color:#666;
+	}
+	.footer-words-a:hover{
+		color:#333;
+		text-decoration: underline;
+	}
+
+
+
+.footer-wordsbox2{
+	padding-top: 10px;
+}
+
+
+.footer-section{
+    color: #999;
+    padding: 20px 0 24px; 
+}
+.footer-shop{
+	border-bottom: 1px solid #e3e3e3;
+	    max-height: 9999px;
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+}
+.footer-shop a{
+	color:#08c;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.footer-locale{
+    float: right;
+    white-space: nowrap;
+}
+.footer-locale-link{
+   display: inline;
+   color:#666;
+}
+.footer-locale-flag{
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/16.png);
+    cursor: pointer;
+    float: left;
+    margin-top: 1px;
+    padding-right: 5px;
+}
+.footer-legal:before{
+	content: " ";
+	display: table;
+}
+.footer-legal-copyright{
+	max-height: 9999px;
+    margin-right: 26px;
+    float: left;
+}
+.footer-legal-links{
+    margin-right: 26px;
+    float: left;
+}
+.footer-legal-link{
+	border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+    white-space: nowrap;
+    color: #666;
+}
+.footer-legal:after{
+	content: " ";
+	display: table;
+	clear:both;
+}
+
+
+  #input{
+	display: none;
+}
+#xiala{
+	width:100%;
+	visibility: hidden;
+	padding: 0 50px;
+	box-sizing:border-box;
+}
+
+
+@media (max-width: 1070px){
+	.asides li{
+		width:50%;
+	}
+}
+@media(max-width: 735px){
+	.asides li{
+		width:100%;
+	}
+	.asides-a-one{
+	border-left: none;
+	background: url(../images/promo_holiday_watch_small.jpg) center center;
+	}
+	.asides-a-two{
+		background: url(../images/promo_ios93preview_small.jpg) center center;
+	}
+	.asides-a-three{
+		background: url(../images/promo_macbook_small.jpg)center center;
+	}
+	.asides-a-four{
+		border-right: none;
+		background: url(../images/promo_startsomethingnew_iphone6s_small.jpg)center center;
+	}
+		.asides-a{
+	    background-size: 736px 200px;
+	} 
+}
+
+@media (max-width: 767px){
+	
+
+	.largeul{
+		display: none;
+	}
+	.smallul{
+		display: block;
+		overflow: hidden;
+	}
+	.navs{
+		height: 48px;
+	}
+
+
+  
+	#xiala li{
+		padding:0 40px;
+	}
+	#input:checked~.navs{
+		background: rgb(0,0,0);
+		height:100%;
+	}
+	#input:checked~.navs #xiala{
+	    visibility: visible;
+	}
+	#label{
+		display: block;
+		position: relative;
+	}
+	#label span{
+		-webkit-transition:-webkit-transform .6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+		transition:transform 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+	}
+	#label span:first-child{
+		position: absolute;
+		top:23px;
+		left:0px;
+		-webkit-transform:translateY(-3px);
+	    transform:translateY(-3px);
+	}
+	#label span:last-child{
+		position: absolute;
+		top:23px;
+		left:0px;
+        -webkit-transform:translateY(3px);
+	    transform:translateY(3px);
+	}
+	
+	#input:checked~.navs #label span:first-child{
+		-webkit-transform:rotateZ(135deg) translateY(0px);
+		transform:rotateZ(135deg) translateY(0px);
+	}
+
+	#input:checked~	.navs #label span:last-child{
+		-webkit-transform:rotateZ(45deg) translateY(0px);
+		transform:rotateZ(45deg) translateY(0px);
+	}
+	.navs .bag{
+		-webkit-transition:-webkit-transform 0.6s ease;
+		transition:transform 0.6s ease;
+	}
+	#input:checked~.navs .bag{
+		-webkit-transform:translateX(200%);
+		transform:translateX(200%);
+	}
+	#xiala li:nth-child(n){
+		border-bottom: 1px solid #fff;
+		width:100%;
+		height: 48px;
+		color:#fff;
+		box-sizing:border-box;
+		position: relative;
+	}
+	#xiala li a{
+		display: block;
+		width:100%;
+		position: absolute;
+		top:0;
+		left: 0;
+		color:#fff;
+	    text-indent: -2000px;
+	}
+
+    
+    .footer-con{
+		margin:0 auto;
+		padding: 0 16px;
+    }
+    .footer-words{
+    	width: 100%;
+    }
+    .footer-words ul{
+    	position: absolute;
+        visibility: hidden;
+    }
+    .footer-wordsbox2{
+		padding-top: 0px;
+    }
+	.footer-wordsbox{
+		line-height: 2.78571;
+		border-bottom: 1px solid #e3e3e3;
+	}
+	.footer-wordsbox h3:after{
+		content: "+";
+		float: right;
+		color:#666;
+		font-weight: 400;
+		margin-right:8px; 
+	}
+    .footer-shop{
+    	border-bottom: none;
+    	padding-bottom: 6px;
+    }
+    .footer-locale{
+    	float: none;
+	    position: relative;
+	    left: -1px;
+	    z-index: 1;
+    }
+    .footer-legal{
+    	padding-top:13px;
+    }
+    .footer-legal-copyright{
+    	margin-right: 0;
+    	float: none;
+    }
+    .footer-legal-links{
+    	margin-right: 0;
+    	float: none;
+    }
+}
+
+#input-sl{
+	display: none;
+}
+#input-sl:checked~.footer-wordsbox #xiala-sl{
+  visibility: visible;
+  position: relative;
+  height: auto;
+}
+.footer-words-tit h3:after{
+	-webkit-transition:-webkit-transform .2s ease;
+	transition:transform .2s ease;
+}
+#input-sl:checked~.footer-wordsbox .footer-words-tit h3:after{
+    -webkit-transform:rotateZ(45deg);
+    transform:rotateZ(45deg);
+}
+#input-as{
+	display: none;
+}
+#input-as:checked~.footer-wordsbox #xiala-as{
+  visibility: visible;
+  position: relative;
+}
+
+#input-as:checked~.footer-wordsbox .footer-words-tit h3:after{
+    -webkit-transform:rotateZ(45deg);
+    transform:rotateZ(45deg);
+}
+#input-fe{
+	display: none;
+}
+#input-fe:checked~.footer-wordsbox #xiala-fe{
+  visibility: visible;
+  position: relative;
+}
+
+#input-fe:checked~.footer-wordsbox .footer-words-tit h3:after{
+    -webkit-transform:rotateZ(45deg);
+    transform:rotateZ(45deg);
+}
+#input-fb{
+	display: none;
+}
+#input-fb:checked~.footer-wordsbox #xiala-fb{
+  visibility: visible;
+  position: relative;
+}
+
+#input-fb:checked~.footer-wordsbox .footer-words-tit h3:after{
+    -webkit-transform:rotateZ(45deg);
+    transform:rotateZ(45deg);
+}
+#input-a{
+	display: none;
+}
+#input-a:checked~.footer-wordsbox #xiala-a{
+  visibility: visible;
+  position: relative;
+}
+
+#input-a:checked~.footer-wordsbox .footer-words-tit h3:after{
+    -webkit-transform:rotateZ(45deg);
+    transform:rotateZ(45deg);
+}
+#input-av{
+	display: none;
+}
+#input-av:checked~.footer-wordsbox #xiala-av{
+  visibility: visible;
+  position: relative;
+}
+
+#input-av:checked~.footer-wordsbox .footer-words-tit h3:after{
+    -webkit-transform:rotateZ(45deg);
+    transform:rotateZ(45deg);
+}
+#input-aa{
+	display: none;
+}
+#input-aa:checked~.footer-wordsbox #xiala-aa{
+  visibility: visible;
+  position: relative;
+}
+
+#input-aa:checked~.footer-wordsbox .footer-words-tit h3:after{
+    -webkit-transform:rotateZ(45deg);
+    transform:rotateZ(45deg);
+}
